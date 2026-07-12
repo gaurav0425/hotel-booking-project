@@ -1,0 +1,133 @@
+.hotel-details {
+  padding: var(--space-lg) var(--space-md) var(--space-xl);
+}
+
+.hotel-details__gallery {
+  margin-top: var(--space-sm);
+}
+
+.hotel-details__main-photo {
+  width: 100%;
+  height: 420px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.hotel-details__main-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hotel-details__thumbs {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: var(--space-sm);
+  overflow-x: auto;
+  padding-bottom: 0.4rem;
+}
+
+.hotel-details__thumb {
+  flex: 0 0 auto;
+  width: 84px;
+  height: 64px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 2px solid transparent;
+  padding: 0;
+  opacity: 0.7;
+  transition: opacity var(--transition-fast), border-color var(--transition-fast);
+}
+
+.hotel-details__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hotel-details__thumb--active,
+.hotel-details__thumb:hover {
+  opacity: 1;
+  border-color: var(--color-accent);
+}
+
+.hotel-details__content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+  align-items: start;
+}
+
+.hotel-details__location {
+  color: var(--color-text-muted);
+  margin: 0.3rem 0 0.6rem;
+}
+
+.hotel-details__section-title {
+  margin-top: var(--space-lg);
+  font-size: 1.3rem;
+}
+
+.hotel-details__description {
+  margin-top: var(--space-sm);
+  color: var(--color-text);
+  line-height: 1.8;
+  max-width: 68ch;
+}
+
+.hotel-details__booking-card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-md);
+  position: sticky;
+  top: 90px;
+  text-align: center;
+}
+
+.hotel-details__price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-md);
+}
+
+.hotel-details__price span {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
+.hotel-details__book-btn {
+  width: 100%;
+  padding: 0.85rem;
+  font-size: 1rem;
+}
+
+.hotel-details__browse-link {
+  display: inline-block;
+  margin-top: var(--space-md);
+  font-size: 0.85rem;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.hotel-details__browse-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .hotel-details__content {
+    grid-template-columns: 1fr;
+  }
+
+  .hotel-details__main-photo {
+    height: 260px;
+  }
+
+  .hotel-details__booking-card {
+    position: static;
+  }
+}

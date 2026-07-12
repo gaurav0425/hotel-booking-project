@@ -1,0 +1,35 @@
+.hotels-page {
+  padding: var(--space-lg) var(--space-md) var(--space-xl);
+}
+
+.hotels-page__header {
+  margin-bottom: var(--space-lg);
+}
+
+.hotels-page__header h1 {
+  margin-bottom: 0.4rem;
+}
+
+.hotels-page__header .search-bar {
+  max-width: 480px;
+  margin-top: var(--space-md);
+}
+
+.hotels-page__layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+.hotels-page__results .hotel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-lg);
+}
+
+@media (max-width: 900px) {
+  .hotels-page__layout {
+    grid-template-columns: 1fr;
+  }
+}

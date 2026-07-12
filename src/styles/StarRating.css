@@ -1,0 +1,31 @@
+.star-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.star {
+  color: var(--color-border);
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.star--full {
+  color: var(--color-star);
+}
+
+.star--half {
+  color: var(--color-star);
+  opacity: 0.5;
+}
+
+.star-rating--lg .star {
+  font-size: 1.3rem;
+}
+
+.star-rating__value {
+  margin-left: 6px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--color-text);
+}

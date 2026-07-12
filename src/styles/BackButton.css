@@ -1,0 +1,17 @@
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: none;
+  border: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-primary);
+  padding: 0.5rem 0;
+  transition: transform var(--transition-fast), color var(--transition-fast);
+}
+
+.back-btn:hover {
+  color: var(--color-primary-light);
+  transform: translateX(-3px);
+}
